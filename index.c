@@ -89,7 +89,7 @@ printf(" %.2f\n",msum[m]);
 
 int main(){
 TxList L={0};
-// sample data
+
 push(&L,(Transaction){2025,8,1,INCOME,1200.00,"Salary","August"});
 push(&L,(Transaction){2025,8,2,EXPENSE,150.50,"Food","Groceries"});
 push(&L,(Transaction){2025,8,3,EXPENSE,80.00,"Transport","Bus pass"});
@@ -105,4 +105,5 @@ ascii_month_chart(&L,2025);
 
 free(L.a);
 return 0;
+
 }
